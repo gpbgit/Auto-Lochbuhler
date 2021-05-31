@@ -52,7 +52,7 @@ namespace Auto
                 pictureBox1.Location = new Point(this.Width, pictureBox1.Location.Y);
             }
 
-            pictureBox3.Location = 
+            pictureBox3.Location =
                 new Point(pictureBox3.Location.X, pictureBox3.Location.Y + y2Weite);
 
             if (y2 + pictureBox3.Height >= this.Height)
@@ -90,11 +90,21 @@ namespace Auto
             stop = !stop;
 
             if (stop)
+            {
                 pictureBox2.Image = AmpelRot;
+                pictureBox4.Image = AmpelGruen;
+
+            }
             else
+            {
                 pictureBox2.Image = AmpelGruen;
+                pictureBox4.Image = AmpelRot;
+            }
         }
 
-        
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
